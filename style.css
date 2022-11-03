@@ -59,15 +59,9 @@ table {
 *******************/
 /* adding color palette */
 /* setting font hierarchy */
-body{
-    font-size: 18px;
-}
+
 /* adding padding */
 /*******************
     Navigation
 *******************/
 
-/* Styling the logo */
-.logo {
-    width: 2rem;
-}
