@@ -65,3 +65,59 @@ table {
     Navigation
 *******************/
 
+/* styling the logo */
+
+.logo {
+    width: 8rem;
+    padding: 1rem;
+}
+
+/* styling nav items */
+
+.nav-icons {
+    height: 2.5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+/* using flex to make the nav items sit to the right */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+}
+
+/* using flex to make the nav items direction horizontal */
+.nav-links {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.nav-items {
+    padding: 1rem;
+    display: flex;
+    row-gap: 1rem;
+}
+
+/* styling nav links */
+.nav-items a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* adding hover to nav links / icons / logo */
+
+.nav-items a:hover {
+    color: black;
+}
+
+.nav-icons:hover {
+    background-color: black;
+    padding: .5rem;
+}
+
+.logo:hover{
+    background-color: black;
+    
+}
