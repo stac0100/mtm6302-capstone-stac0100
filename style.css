@@ -58,9 +58,20 @@ table {
     Basic Styles
 *******************/
 /* adding color palette */
+:root {
+    --primary-color: #F1ECF0;
+    --secondary-color: #9C939F;
+    --tertiary-color: #DCF2DD;
+    --background-color: #FAFAFA;
+}
+
+body{
+    background-color: var(--tertiary-color);
+    font-size: 18px;
+}
 /* setting font hierarchy */
 
-/* adding padding */
+
 /*******************
     Navigation
 *******************/
@@ -85,6 +96,7 @@ table {
     display: flex;
     justify-content: space-between;
     padding: 0 2rem 0 2rem;
+    background-color: var(--secondary-color);
 }
 
 /* using flex to make the nav items direction horizontal */
@@ -120,4 +132,62 @@ table {
 .logo:hover{
     background-color: black;
     
+}
+
+/*******************
+    Content
+*******************/
+
+/* styling the container */
+.container {
+    background-color: var(--background-color);
+    margin: 0 8rem 0 8rem;
+    height: 100vh;
+}
+
+/* styling the home page banner */
+.banner {
+    /* making the image responsive */
+   max-width: 100%;
+   height: auto;
+   /* centering the image */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+/*******************
+    Search Bar
+*******************/
+
+/* styling the search function */
+
+.search {
+    width: 50%;
+    border: none;
+    padding: 2rem;
+
+    border-radius: 3rem;
+    border: .2rem solid var(--tertiary-color);
+}
+
+.search-icon {
+    width: 2rem;
+    padding: 1rem;
+}
+
+/* making the search button overlap the input form */
+.search-submit {
+    border: .2rem solid var(--tertiary-color);
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    position: relative;
+    right: 4rem;
+}
+
+/* making the search button and input sit next to each other & centering */
+.search-bar {
+    display: flex;
+    justify-content: center;
 }
