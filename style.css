@@ -74,6 +74,15 @@ p {
     font-size: 18px;
 }
 
+h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+
+/* adding font */
 /*******************
     Navigation
 *******************/
@@ -123,16 +132,16 @@ p {
 /* adding hover to nav links / icons / logo */
 
 .nav-items a:hover {
-    color: black;
+    color: var(--secondary-color);
 }
 
 .nav-icons:hover {
-    background-color: black;
+    background-color: var(--secondary-color);
     padding: .5rem;
 }
 
 .logo:hover{
-    background-color: black;
+    background-color: var(--secondary-color);
     
 }
 
@@ -144,7 +153,6 @@ p {
 #container {
     background-color: var(--background-color);
     margin: 0 8rem 0 8rem;
-    height: 100vh;
 }
 
 /* styling the home page banner */
@@ -219,9 +227,11 @@ p {
     border-bottom-right-radius: .4rem;
 }
 
+/*******************
+    Filters
+*******************/
 
-/* styling filters */
-
+/* suprise button */
 .button-icon {
     width: 2rem;
     padding-right: 2rem;
@@ -234,7 +244,7 @@ p {
     display: flex;
     align-items: center;
     padding: .5rem;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 4rem;
 }
 
 .button p {
@@ -242,4 +252,207 @@ p {
     padding-left: 2rem;
     color: white;
     font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* styling filter drop down */
+
+/* Dropdown Button */
+.dropButton {
+    background-color: var(--background-color);
+    color: rgb(59, 59, 59);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 4rem 0 1rem;
+    border: .1rem solid rgb(128, 126, 126);
+    border-radius: 2rem;
+  }
+
+  .dropButton img{
+    width: 1.5rem;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropButton:hover, .dropButton:focus {
+    background-color: var(--primary-color);
+  }
+  
+  .sort {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hidden by Default */
+  .dropdown-filter {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    padding: 1rem;
+  }
+
+  .dropdown-filter li {
+    padding: 1rem;
+  }
+
+  .dropdown-filter li:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+
+  /* Show the dropdown menu */
+  .show {display:block;}
+
+  #suprise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+/*******************
+    Pokemon
+*******************/
+/* creating the grid */
+.pokemonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+
+/* styling pokemon */
+#pokemon {
+    background-color: var(--primary-color);
+    border: .1rem solid var(--secondary-color);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+#pokemon span {
+    padding: 2rem;
+    color: var(--secondary-color);
+}
+
+.pokemonContent {
+    margin: 1rem;
+}
+
+/* styling the different buttons */
+
+.grass {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #9BCB50;
+}
+
+.poison {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #B97FC9;
+    color: white;
+}
+
+.fire {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #FC7C23;
+    color: white;
+}
+
+.flying {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background: linear-gradient(#3DC7EF 50%, #BCB8B8 50%);
+}
+
+.water {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #4592C4;
+    color: white;
+}
+
+.bug {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #729F40;
+    color: white;
+}
+
+.normal {
+    padding: .4rem 1.5rem .4rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #A2ABAF;
+}
+
+/* styling load more button */
+
+.loadMore {
+    padding: .8rem 3rem .8rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 2rem;
+
+    background-color: var(--background-color);
+    border: .15rem solid var(--secondary-color);
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    }
+
+#more {
+    padding-bottom: 2rem;
+}
+
+.loadMore:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+/*******************
+    Footer
+*******************/
+footer{
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    color: white;
+    padding: 0 4rem 2rem 4rem;
+}
+.footer {
+    display: flex;
+    column-gap: 1.5rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.footer li a{
+    color: white;
 }

@@ -16,7 +16,7 @@
             <a href="index.html"><img class="logo" src="icons/logo-white.png" alt="Pokemon 8 Logo"></a>
             <ul class="nav-links">
                 <li class="nav-items"><a href="pokedex.html"><img class="nav-icons" src="icons/gaming-white.png" alt="Pokemon ball with stars and cirles surrounding it"><br>Pokédex</a></li>
-                <li class="nav-items"><a href="myPokemon.html"><img class="nav-icons" src="icons/backpack-white.png" alt="white backpack"><br>My Pokémon</a></li>
+                <li class="nav-items"><a href="pokemon.html"><img class="nav-icons" src="icons/backpack-white.png" alt="white backpack"><br>My Pokémon</a></li>
                 <li class="nav-items"><a href=""><img class="nav-icons" src="icons/login-white.png" alt="login icon"><br>Log-in</a></li>
             </ul>
         </nav>   
@@ -45,156 +45,286 @@
                 <!-- suprise button, provides a random pokemon -->
                 <button class="button"><p>Suprise Me </p> <img class="button-icon" src="icons/random copy.png" alt="box of suprises icon"></button>
                 <!-- sort function dropdown -->
-                <button></button>
+                <div class="sort">
+                    <p>Sort By:</p>
+                    <button onclick="myFunction()" class="dropButton">Lowest Number (First) <img src="icons/arrow copy.png" alt="dropdown icon"></button>
+                    <ul id="dropdown" class="dropdown-filter">
+                        <li>Lowest Number (First)</li>
+                        <li>Highest Number (First)</li>
+                        <li>A-Z</li>
+                        <li>Z-A</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="pokemonGrid">
             <!-- adding all the pokemon -->
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img class="pokeImage" src="images/001.png" alt="pokemon"></div>
+                    <span>#001</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Bulbasaur</h2>
+                    <div>
+                        <button class="grass">Grass</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/002.png" alt="pokemon"></div>
+                    <span>#002</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Ivysaur</h2>
+                    <div>
+                        <button class="grass">Grass</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/003.png" alt="pokemon"></div>
+                    <span>#003</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Venusaur</h2>
+                    <div>
+                        <button class="grass">Grass</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/004.png" alt="pokemon"></div>
+                    <span>#004</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Charmander</h2>
+                    <div>
+                        <button class="fire">Fire</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/005.png" alt="pokemon"></div>
+                    <span>#005</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Charmeleon</h2>
+                    <div>
+                        <button class="fire">Fire</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/006.png" alt="pokemon"></div>
+                    <span>#006</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Charizard</h2>
+                    <div>
+                        <button class="fire">Fire</button>
+                        <button class="flying">Flying</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/007.png" alt="pokemon"></div>
+                    <span>#007</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Squirtle</h2>
+                    <div>
+                        <button class="water">Water</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/008.png" alt="pokemon"></div>
+                    <span>#008</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Wartortle</h2>
+                    <div>
+                        <button class="water">Water</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/009.png" alt="pokemon"></div>
+                    <span>#009</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Blastoise</h2>
+                    <div>
+                        <button class="water">Water</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons"></div>
-            </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/010.png" alt="pokemon"></div>
+                    <span>#010</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Caterpie</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/011.png" alt="pokemon"></div>
+                    <span>#011</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Metapod</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/012.png" alt="pokemon"></div>
+                    <span>#012</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Butterfree</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                        <button class="flying">Flying</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/013.png" alt="pokemon"></div>
+                    <span>#013</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Weedle</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/014.png" alt="pokemon"></div>
+                    <span>#014</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Kakuna</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/015.png" alt="pokemon"></div>
+                    <span>#015</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Beedrill</h2>
+                    <div>
+                        <button class="bug">Bug</button>
+                        <button class="poison">Poison</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/016.png" alt="pokemon"></div>
+                    <span>#016</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Pidgey</h2>
+                    <div>
+                        <button class="normal">Normal</button>
+                        <button class="flying">Flying</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/017.png" alt="pokemon"></div>
+                    <span>#017</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Pidgeotto</h2>
+                    <div>
+                        <button class="normal">Normal</button>
+                        <button class="flying">Flying</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/018.png" alt="pokemon"></div>
+                    <span>#018</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Pidgeot</h2>
+                    <div>
+                        <button class="normal">Normal</button>
+                        <button class="flying">Flying</button>
+                    </div>
                 </div>
             </div>
-            <div id="pokemon">
-                <div><img src="" alt=""></div>
-                <span></span>
-                <div class="icons">
-                    <link rel="apple-touch-icon" href="favicon.png">
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/019.png" alt="pokemon"></div>
+                    <span>#019</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Rattata</h2>
+                    <div>
+                        <button class="normal">Normal</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="pokemon">
+                    <div><img src="images/020.png" alt="pokemon"></div>
+                    <span>#020</span>
+                </div>
+                <div class="pokemonContent">
+                    <h2>Raticate</h2>
+                    <div>
+                        <button class="normal">Normal</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="more">
             <!-- adding load more button -->
+            <button class="loadMore">Load More...</button>
         </div>
         <footer>
-            <nav></nav>
-            <p><!--adding copyright --></p>
+            <nav>
+                <ul class="footer">
+                    <li><a href="pokedex.html">Pokédex</a></li>
+                    <li><a href="pokemon.html">My Pokémon</a></li>
+                    <li><a href="">Log In</a></li>
+                </ul>
+            </nav>
+            <p>©Pokémon</p>
         </footer>
     </div>
     <script src="script.js"></script>
