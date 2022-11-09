@@ -328,14 +328,7 @@ h2 {
 /*******************
     Pokemon
 *******************/
-/* creating the grid */
-.pokemonGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
-    width: 80%;
-    padding-bottom: 2rem;
-}
+
 
 /* styling pokemon */
 #pokemon {
@@ -569,50 +562,7 @@ footer p {
     max-width: 100%;
     height: auto;
 }
-/*******************
-    Grid
-*******************/
 
-#myPokemonGrid {
-    /* creating the grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6rem 4rem 20rem 6rem 23rem 26rem;
-    margin-top: 2rem;
-}
-/* positioning description */
-.description {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    padding: 0 4rem 2rem 2rem;
-    line-height: 2rem;
-}
-
-.pokeImage {
-    margin: 0 2rem 0 4rem;
-    background-color: var(--tertiary-color);
-    border-radius: 1rem;
-    
-    /* positioning image */
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.pokeImage img{
-    /* centering image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* positioning version */
-.version {
-    grid-column-start: 2;
-    grid-row-start: 2;
-
-    padding: 0 4rem 0 2rem;
-}
 /* making game version sit next to each other */
 .versionFlex {
     display: flex;
@@ -623,24 +573,7 @@ footer p {
 .versionFlex p {
     font-weight: bold;
 }
-/* creating information grid */
-.information {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    margin: 0 4rem 0 2rem;
-    background-color: var(--primary-color);
-    border-radius: 1rem;
-    width: fit-content;
-    padding: 2rem 2rem 0 2rem;
-    column-gap: 4rem;
-}
 
-/* positioning information */
-#information {
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
 .information div .bold {
     padding-bottom: 1rem;
     font-weight: bold;
@@ -648,12 +581,6 @@ footer p {
 
 .information div p {
     padding-bottom: 2rem;
-}
-/* positioning type */
-.type {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    padding: 2rem;
 }
 
 /* making type buttons sit next to each other */
@@ -690,13 +617,7 @@ footer p {
     margin-top: 2rem;
     justify-items: center;
 }
-/* positioning stats */
-.stats {
-    padding: 0 2rem 0 2rem;
-    grid-column-start: 1;
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
+
 /* stats title */
 .stats p{
     font-weight: bold;
@@ -713,14 +634,6 @@ footer p {
 /* adding fill to lines */
 .fill {
     background-color: var(--secondary-color);
-}
-
-/* positioning weaknesses */
-.weak {
-    grid-column-start: 2;
-    grid-row-start: 5;
-    margin-left: 2rem;
-    padding-top: 2rem;
 }
 
 .weak p {
@@ -775,3 +688,137 @@ footer p {
     padding-left: .5rem;
     color: var(--secondary-color);
 }
+
+
+
+.container {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    background-color: var(--background-color);
+
+}
+
+
+.grid div {
+    padding: 2rem;
+}
+
+.pokem {
+    background-color: var(--primary-color);
+    margin: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+}
+
+/*******************************************
+                Media Queries 
+********************************************/
+
+/* creating the grid */
+.pokemonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+
+/*******************
+    Grid
+*******************/
+    #myPokemonGrid {
+        /* creating the grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 6rem 4rem 20rem 6rem 23rem 26rem;
+        margin-top: 2rem;
+    }
+    /* positioning description */
+    .description {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        padding: 0 4rem 2rem 2rem;
+        line-height: 2rem;
+    }
+    
+    .pokeImage {
+        margin: 0 2rem 0 4rem;
+        background-color: var(--tertiary-color);
+        border-radius: 1rem;
+        
+        /* positioning image */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    
+    .pokeImage img{
+        /* centering image */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* positioning version */
+    .version {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    
+        padding: 0 4rem 0 2rem;
+    }
+    /* creating information grid */
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0 4rem 0 2rem;
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+        width: fit-content;
+        padding: 2rem 2rem 0 2rem;
+        column-gap: 4rem;
+    }
+    
+    /* positioning information */
+    #information {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /* positioning type */
+    .type {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        padding: 2rem;
+    }
+    
+    /* positioning stats */
+    .stats {
+        padding: 0 2rem 0 2rem;
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    /* positioning weaknesses */
+    .weak {
+        grid-column-start: 2;
+        grid-row-start: 5;
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .evolution {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+    
+        margin: 0 auto;  
+        padding-bottom: 2rem;  
+    }
+    .evolutionGrid {
+        display: flex;
+        gap: 1rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }    
+
