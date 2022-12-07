@@ -108,49 +108,6 @@ h2 {
     text-align: center;
 }
 
-/* using flex to make the nav items sit to the right */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem 0 2rem;
-    background-color: var(--secondary-color);
-}
-
-/* using flex to make the nav items direction horizontal */
-.nav-links {
-    display: flex;
-    column-gap: 3rem;
-}
-
-.nav-items {
-    padding: 1rem;
-    display: flex;
-    row-gap: 1rem;
-}
-
-/* styling nav links */
-.nav-items a{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* adding hover to nav links / icons / logo */
-
-.nav-items a:hover {
-    color: #926a9e;
-}
-
-.nav-icons:hover {
-    background-color: #926a9e;
-    padding: .5rem;
-}
-
-.logo:hover{
-    background-color: #926a9e;
-    
-}
-
 /*******************
     Content
 *******************/
@@ -158,7 +115,7 @@ h2 {
 /* styling the container */
 #container {
     background-color: var(--background-color);
-    margin: 0 8rem 0 8rem;
+
 }
 
 /* styling the home page banner */
@@ -214,9 +171,9 @@ h2 {
     bottom: 3rem;
 }
 
-/*******************
+/************************
     Advanced Search
-*******************/
+*************************/
 
 .advanced-search {
     background-color: var(--background-color);
@@ -237,36 +194,10 @@ h2 {
     Filters
 *******************/
 
-/* suprise button */
-.button-icon {
-    width: 2rem;
-    padding-right: 2rem;
-}
+/*******************
+    Drop-Down
+*******************/
 
-.button {
-    background-color: #A3A1D0;
-    border: none;
-    border-radius: .4rem;
-    display: flex;
-    align-items: center;
-    padding: .5rem;
-    margin: 2rem 2rem 2rem 4rem;
-}
-
-.button p {
-    padding-right: 1rem;
-    padding-left: 2rem;
-    color: white;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* styling filter drop down */
-
-/* Dropdown Button */
 .dropButton {
     background-color: var(--background-color);
     color: rgb(59, 59, 59);
@@ -286,7 +217,7 @@ h2 {
   .dropButton:hover, .dropButton:focus {
     background-color: var(--primary-color);
   }
-  
+  /* positioning */
   .sort {
     position: relative;
     display: flex;
@@ -314,40 +245,71 @@ h2 {
     color: white;
   }
 
-
   /* Show the dropdown menu */
   .show {display:block;}
 
-  #suprise{
+/***********************
+    Suprise Button
+************************/
+.button-icon {
+    width: 2rem;
+    padding-right: 2rem;
+}
+
+.button {
+    background-color: #A3A1D0;
+    border: none;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    margin: 2rem 2rem 2rem 4rem;
+}
+
+.button p {
+    padding-right: 1rem;
+    padding-left: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+#suprise{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-  }
+}
 
 /*******************
     Pokemon
 *******************/
 
-
-/* styling pokemon */
+/* pokemon content box */
 #pokemon {
     background-color: var(--primary-color);
     border: .1rem solid var(--secondary-color);
     border-radius: 2rem;
-    margin: 1rem;
 }
 
+/* hexadecimal number under pokemon */
 #pokemon span {
-    padding: 2rem;
     color: var(--secondary-color);
 }
 
+/* pokemon name and skills buttons */
 .pokemonContent {
     margin: 1rem;
 }
 
-/* styling the different buttons */
+/* pokemon image */
+
+/**************************
+    Pokemon Skills
+***************************/
 
 .grass {
     padding: .4rem 1.5rem .4rem 1.5rem;
@@ -427,7 +389,9 @@ h2 {
     color: white;
 }
 
-/* styling load more button */
+/************************
+   Load More Button
+*************************/
 
 .loadMore {
     padding: .8rem 3rem .8rem 3rem;
@@ -475,7 +439,7 @@ footer p {
 }
 
 /****************************************
-            MY POKEMON
+            MY POKEMON PAGE
 ****************************************/
 
 /*******************
@@ -649,20 +613,6 @@ footer p {
 
 /* evolutions */
 
-.evolution {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 6;
-
-    margin: 0 auto;  
-    padding-bottom: 2rem;  
-}
-
-.evolutionGrid {
-    display: flex;
-    gap: 1rem;
-}
-
 .arrow {
     width: 5rem;
 }
@@ -689,15 +639,12 @@ footer p {
     color: var(--secondary-color);
 }
 
-
-
 .container {
     margin-left: 8rem;
     margin-right: 8rem;
     background-color: var(--background-color);
 
 }
-
 
 .grid div {
     padding: 2rem;
@@ -712,113 +659,195 @@ footer p {
 /*******************************************
                 Media Queries 
 ********************************************/
+/* for tablet */
+@media only screen and (min-width: 768px) {
+    
+    /*******************
+        Grid
+    *******************/
+        .pokemonGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: auto;
+            width: 80%;
+            padding-bottom: 2rem;
+        }
+        #myPokemonGrid {
+            /* creating the grid */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 6rem 4rem 20rem 6rem 23rem 26rem;
+            margin-top: 2rem;
+        }
+        /* positioning description */
+        .description {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            padding: 0 4rem 2rem 2rem;
+            line-height: 2rem;
+        }
+        .pokeImage {
+            margin: 0 2rem 0 4rem;
+            background-color: var(--tertiary-color);
+            border-radius: 1rem;
+        
+            /* positioning image */
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    
+        .pokeImage img{
+            /* centering image */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* positioning version */
+        .version {
+            grid-column-start: 2;
+            grid-row-start: 2;
+    
+            padding: 0 4rem 0 2rem;
+        }
+        /* creating information grid */
+        .information {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            margin: 0 4rem 0 2rem;
+            background-color: var(--primary-color);
+            border-radius: 1rem;
+            width: fit-content;
+            padding: 2rem 2rem 0 2rem;
+            column-gap: 4rem;
+        }
+    
+        /* positioning information */
+        #information {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /* positioning type */
+        .type {
+            grid-column-start: 2;
+            grid-row-start: 4;
+            padding: 2rem;
+        }
+    
+        /* positioning stats */
+        .stats {
+            padding: 0 2rem 0 2rem;
+            grid-column-start: 1;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        /* positioning weaknesses */
+        .weak {
+            grid-column-start: 2;
+            grid-row-start: 5;
+            margin-left: 2rem;
+            padding-top: 2rem;
+        }
+    
+        .evolution {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+    
+            margin: 0 auto;  
+            padding-bottom: 2rem;  
+        }
+        .evolutionGrid {
+            display: flex;
+            gap: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }    
 
-/* creating the grid */
-.pokemonGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
-    width: 80%;
-    padding-bottom: 2rem;
+        /* pokemon evolutions */
+        .evolution {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+        
+            margin: 0 auto;  
+            padding-bottom: 2rem;  
+        }
+        
+        .evolutionGrid {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* styling the container */
+        #container {
+            background-color: var(--background-color);
+            margin: 0 8rem 0 8rem;
+        }
+
+        /* styling the logo */
+
+        .logo {
+            width: 8rem;
+            padding: 1rem;
+        }
+
+        /* styling nav items */
+
+        .nav-icons {
+            height: 2.5rem;
+            padding-bottom: .5rem;
+            text-align: center;
+        }
+
+        /* using flex to make the nav items sit to the right */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem 0 2rem;
+            background-color: var(--secondary-color);
+        }
+
+        /* using flex to make the nav items direction horizontal */
+        .nav-links {
+            display: flex;
+            column-gap: 3rem;
+        }
+
+        .nav-items {
+            padding: 1rem;
+            display: flex;
+            row-gap: 1rem;
+        }
+
+        /* styling nav links */
+        .nav-items a{
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* adding hover to nav links / icons / logo */
+
+        .nav-items a:hover {
+            color: #926a9e;
+        }
+
+        .nav-icons:hover {
+            background-color: #926a9e;
+            padding: .5rem;
+        }
+
+        .logo:hover{
+            background-color: #926a9e;
+    
+        }
 }
 
-/*******************
-    Grid
-*******************/
-    #myPokemonGrid {
-        /* creating the grid */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 6rem 4rem 20rem 6rem 23rem 26rem;
-        margin-top: 2rem;
-    }
-    /* positioning description */
-    .description {
-        grid-row-start: 1;
-        grid-column-start: 2;
-        padding: 0 4rem 2rem 2rem;
-        line-height: 2rem;
-    }
-    
-    .pokeImage {
-        margin: 0 2rem 0 4rem;
-        background-color: var(--tertiary-color);
-        border-radius: 1rem;
-        
-        /* positioning image */
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-    
-    .pokeImage img{
-        /* centering image */
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* positioning version */
-    .version {
-        grid-column-start: 2;
-        grid-row-start: 2;
-    
-        padding: 0 4rem 0 2rem;
-    }
-    /* creating information grid */
-    .information {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        margin: 0 4rem 0 2rem;
-        background-color: var(--primary-color);
-        border-radius: 1rem;
-        width: fit-content;
-        padding: 2rem 2rem 0 2rem;
-        column-gap: 4rem;
-    }
-    
-    /* positioning information */
-    #information {
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    /* positioning type */
-    .type {
-        grid-column-start: 2;
-        grid-row-start: 4;
-        padding: 2rem;
-    }
-    
-    /* positioning stats */
-    .stats {
-        padding: 0 2rem 0 2rem;
-        grid-column-start: 1;
-        grid-row-start: 4;
-        grid-row-end: 6;
-    }
-    /* positioning weaknesses */
-    .weak {
-        grid-column-start: 2;
-        grid-row-start: 5;
-        margin-left: 2rem;
-        padding-top: 2rem;
-    }
-    
-    .evolution {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 6;
-    
-        margin: 0 auto;  
-        padding-bottom: 2rem;  
-    }
-    .evolutionGrid {
-        display: flex;
-        gap: 1rem;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }    
+
+/* for desktop */
 
