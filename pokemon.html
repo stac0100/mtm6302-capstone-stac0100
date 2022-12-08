@@ -26,29 +26,30 @@
         </nav>   
     </div>
     <div id="container">
-        <div id="next" class="next">
-            <!-- adding go back and go to next button -->
-            <button>
-                <img class="transform" src="icons/arrow-white.png" alt="arrow white">
-                <span id="hex">#905</span><span>Enamorus</span>
-            </button>
-            <button>
-                <span>Ivysaur</span><span id="hex">#002</span>
-                <img class="transform-left" src="icons/arrow-white.png" alt="arrow white">
-            </button>
-        </div>
-        <div class="pokemon">
-            <div>
-                <h1>Bulbasaur <span>#001</span></h1>
+        <div class="container">
+            <div id="next" class="next">
+                <!-- adding go back and go to next button -->
+                <button>
+                    <img class="transform" src="icons/arrow-white.png" alt="arrow white">
+                    <span id="hex">#905</span><span>Enamorus</span>
+                </button>
+                <button>
+                    <span>Ivysaur</span><span id="hex">#002</span>
+                    <img class="transform-left" src="icons/arrow-white.png" alt="arrow white">
+                </button>
             </div>
-            <div id="caught">
-                <!-- adding buttons that state if a pokemon is caught or not -->
+            <div class="pokemon">
+                <div>
+                    <h1>Bulbasaur <span>#001</span></h1>
+                </div>
+                <div id="caught">
+                    <!-- adding buttons that state if a pokemon is caught or not -->
+                </div>
+                <div class="cta">
+                    <p>Add your pokemon to the caught list and save it to local storage. This way you'll be able to acess your pokemon at all times!</p>
+                    <button>Add to My Pokemon</button>
+                </div>
             </div>
-            <div class="cta">
-                <p>Add your pokemon to the caught list and save it to local storage. This way you'll be able to acess your pokemon at all times!</p>
-                <button>Add to My Pokemon</button>
-            </div>
-            
             <div id="myPokemonGrid">
                 <div class="pokeImage">
                     <!-- displaying the pokemon -->
@@ -56,7 +57,7 @@
                 </div>
                 <p class="description">
                     <!-- description -->
-                    There is a plant seed on its back right from the day this Pokemone is born. The seed slowly grows larger.
+                    There is a plant seed on its back right from the day this Pokemon is born. The seed slowly grows larger.
                 </p>
                 <div class="version">
                     <!-- showing the version (red or blue)-->
@@ -64,168 +65,167 @@
                         <p>Version:</p>
                         <img class="ball" src="icons/ball_blue.png" alt="pokemone ball blue">
                         <img class="ball" src="icons/ball_red.png" alt="pokemon ball red">
-                    </div>
+                     </div>
                 </div>
                 <div id="information" class="information">
-                    <div>
+                     <div>
                         <!-- height -->
                         <p class="bold">Height</p>
                         <p>2'04"</p>
                     </div>
-                    <div>
-                        <!-- weight -->
-                       <p class="bold">Weight</p>
-                       <p>15.2lbs</p>
-                    </div>
-                    <div>
-                        <!-- gender -->
-                        <p class="bold">Gender</p>
-                    </div>
-                    <div>
-                        <!-- category -->
-                        <p class="bold">Category</p>
-                        <p>Seed</p>
-                    </div>
-                    <div>
-                        <!-- abilities -->
-                        <p class="bold">Abilities</p>
-                        <ul>
-                            <li>Overgrow</li>
-                        </ul>
-                    </div>
+                 <div>
+                    <!-- weight -->
+                    <p class="bold">Weight</p>
+                    <p>15.2lbs</p>
                 </div>
-                <div class="type">
-                    <!-- type -->
-                    <p>Type:</p>
-                  <ul>
-                    <li><button class="grass">Grass</button></li>
-                    <li><button class="poison">Poison</button></li>
-                  </ul>
+                <div>
+                    <!-- gender -->
+                    <p class="bold">Gender</p>
                 </div>
-                <!-- weaknesses -->
-                <div class="weak">
-                    <p>Weaknesses:</p>
-                    <ul class="weak-buttons">
-                        <li><button class="fire">Fire</button></li>
-                        <li><button class="psychic">Psychic</button></li>
-                        <li><button class="flying">Flying</button></li>
-                        <li><button class="ice">Ice</button></li>
+                 <div>
+                    <!-- category -->
+                    <p class="bold">Category</p>
+                    <p>Seed</p>
+                </div>
+                <div>
+                    <!-- abilities -->
+                    <p class="bold">Abilities</p>
+                    <ul>
+                        <li>Overgrow</li>
                     </ul>
                 </div>
-                <!-- creating the graph -->
+            </div>
+            <div class="type">
+                 <!-- type -->
+                <p>Type:</p>
+                 <ul>
+                    <li><button class="grass">Grass</button></li>
+                    <li><button class="poison">Poison</button></li>
+                </ul>
+            </div>
+            <!-- weaknesses -->
+            <div class="weak">
+                <p>Weaknesses:</p>
+                 <ul class="weak-buttons">
+                    <li><button class="fire">Fire</button></li>
+                    <li><button class="psychic">Psychic</button></li>
+                    <li><button class="flying">Flying</button></li>
+                    <li><button class="ice">Ice</button></li>
+                </ul>
+            </div>
+            <!-- creating the graph -->
             
-                <div class="stats">
-                    <p>Stats:</p>
-                    <div class="statsContent">
-                        <!-- graph vertical line #1 - HP -->
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">HP</span>
-                        </div>
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">Attack</span>
-                        </div>
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">Defense</span>
-                        </div>
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">Special Attack</span>
-                        </div>
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">Special Defense</span>
-                        </div>
-                        <div class="vertical">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span id="statsTitle">Speed</span>
-                        </div>
+            <div class="stats">
+                <p>Stats:</p>
+                <div class="statsContent">
+                    <!-- graph vertical line #1 - HP -->
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">HP</span>
+                    </div>
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">Attack</span>
+                    </div>
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">Defense</span>
+                    </div>
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">Special Attack</span>
+                    </div>
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">Special Defense</span>
+                    </div>
+                    <div class="vertical">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span class="fill"></span>
+                        <span id="statsTitle">Speed</span>
                     </div>
                 </div>
                 <div class="evolution">
@@ -264,17 +264,18 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                <nav>
-                    <ul class="footer">
-                        <li><a href="pokedex.html">Pokédex</a></li>
-                        <li><a href="pokemon.html">My Pokémon</a></li>
-                        <li><a href="">Log In</a></li>
-                    </ul>
-                </nav>
-                <p>©Pokémon</p>
-            </footer>
+        </div>
     </div>
+    <footer>
+        <nav>
+            <ul class="footer">
+                <li><a href="pokedex.html">Pokédex</a></li>
+                <li><a href="pokemon.html">My Pokémon</a></li>
+                <li><a href="">Log In</a></li>
+            </ul>
+        </nav>
+        <p>©Pokémon</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -68,8 +68,8 @@ table {
 body{
     background-color: var(--tertiary-color);
 }
-/* setting font hierarchy */
 
+/* setting font hierarchy */
 p {
     font-size: 18px;
 }
@@ -86,111 +86,9 @@ h2 {
     padding-bottom: 1rem;
 }
 
-
-
-/* adding font */
-/*******************
-    Navigation
-*******************/
-
-/* styling the logo */
-.logo {
-    width: 8rem;
-    padding: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* styling nav icons */
-.nav-icons {
-    height: 2.5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-bottom: .5rem;
-}
-
-.navbar {
-    background-color: var(--secondary-color);
-    /* hiding until click */
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-/* styling nav list */
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-items{
-    margin: 1.5rem;
-}
-
-/* icons */
-.nav-x{
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav-x:hover{
-    color: black;
-}
-
-.hamburger-menu{
-    color: white;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    margin: 1rem;
-}
-
-.circle {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--primary-color);
-}
-
-.hamburger-menu:hover{
-    color: black;
-    background-color: var(--tertiary-color);
-    border: 1px solid black;
-}
-
-.nav-items a {
-    color: white;
-}
-/* adding hover to nav links / icons / logo */
-
-.nav-items a:hover {
-    color: #926a9e;
-}
-
-.nav-icons:hover {
-    background-color: #926a9e;
-    padding: .5rem;
-}
-
-.logo:hover{
-    background-color: #926a9e;
-}
 /*******************
     Content
 *******************/
-
-/* styling the container */
-#container {
-    background-color: var(--background-color);
-
-}
-
 /* styling the home page banner */
 .banner {
     /* making the image responsive */
@@ -204,28 +102,29 @@ h2 {
 
 #banner {
     background-color: var(--primary-color);
+    padding-bottom: 3rem;
 }
+
 /*******************
     Search Bar
 *******************/
 
 /* styling the search function */
+#search {margin: auto;}
 
 .form-container {
     background-color: var(--secondary-color);
-    margin-top: 4rem;
+    padding-top: 1rem;
 }
 .search {
-    width: 50%;
     border: none;
     padding: 2rem;
-
     border-radius: 3rem;
     border: .2rem solid var(--tertiary-color);
 }
 
 .search-icon {
-    width: 2rem;
+    width: 1.5rem;
     padding: 1rem;
 }
 
@@ -242,10 +141,14 @@ h2 {
 .search-bar {
     display: flex;
     justify-content: center;
+    margin-left: 2rem;
     position: relative;
     bottom: 3rem;
 }
 
+.search-bar input[type=text] {
+    font-size: 1rem;
+}
 /************************
     Advanced Search
 *************************/
@@ -297,6 +200,7 @@ h2 {
     position: relative;
     display: flex;
     align-items: center;
+    margin: 2rem;
   }
   
   /* Hidden by Default */
@@ -307,7 +211,6 @@ h2 {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
     padding: 1rem;
   }
 
@@ -338,7 +241,7 @@ h2 {
     display: flex;
     align-items: center;
     padding: .5rem;
-    margin: 2rem 2rem 2rem 4rem;
+    margin: 2rem;
 }
 
 .button p {
@@ -349,14 +252,7 @@ h2 {
 }
 
 .button:hover {
-    background-color: var(--secondary-color);
-}
-
-#suprise{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+    background-color: violet;
 }
 
 /*******************
@@ -368,19 +264,22 @@ h2 {
     background-color: var(--primary-color);
     border: .1rem solid var(--secondary-color);
     border-radius: 2rem;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* hexadecimal number under pokemon */
 #pokemon span {
     color: var(--secondary-color);
+    padding: 2rem;
 }
 
 /* pokemon name and skills buttons */
 .pokemonContent {
-    margin: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    padding: 2rem;
 }
-
-/* pokemon image */
 
 /**************************
     Pokemon Skills
@@ -390,7 +289,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #9BCB50;
 }
 
@@ -398,7 +297,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #B97FC9;
     color: white;
 }
@@ -407,7 +306,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #FC7C23;
     color: white;
 }
@@ -416,7 +315,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background: linear-gradient(#3DC7EF 50%, #BCB8B8 50%);
 }
 
@@ -424,7 +323,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #4592C4;
     color: white;
 }
@@ -433,7 +332,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #729F40;
     color: white;
 }
@@ -442,7 +341,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #A2ABAF;
 }
 
@@ -450,7 +349,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #F364B9;
     color: white;
 }
@@ -459,7 +358,7 @@ h2 {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
     border: none;
-
+    margin-bottom: .5rem;
     background-color: #51C4E6;
     color: white;
 }
@@ -505,16 +404,19 @@ footer p {
 }
 .footer {
     display: flex;
+    flex-direction: column;
     column-gap: 1.5rem;
     padding: 2rem 4rem 2rem 4rem;
 }
-
+.footer li {
+    margin: .5rem;
+}
 .footer li a{
     color: white;
 }
 
 /****************************************
-            MY POKEMON PAGE
+        pokemon information 
 ****************************************/
 
 /*******************
@@ -522,23 +424,22 @@ footer p {
 *******************/
 
 .transform {
-    width: 2rem;
+    width: 1rem;
     transform: rotate(90deg);
 }
 
 .transform-left {
-    width: 2rem;
+    width: 1rem;
     transform: rotate(-90deg);
 }
 
 .next button {
+    margin: 0 2rem 2rem 2rem;
     padding: .5rem;
     display: block;
     height: 4rem;
     border: none;
     background-color: var(--secondary-color);
-
-    margin: 0 1rem 0 1rem;
     border-radius: 1rem;
 }
 
@@ -552,34 +453,18 @@ footer p {
     color: white;
     font-weight: bold;
 }
-
-.next {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 2rem;
-}
-
-
 /* pokemon version balls */
 .ball {
     width: 1.5rem;
 }
-
-
 /*******************
     Call to Action
 *******************/
 
-.cta {
-    padding: 2rem 2rem 2rem 4rem;
-    grid-row-start: 2;
-}
-
 .cta p {
     line-height: 2rem;
-    margin-bottom: 1.5rem;
     text-align: center;
-    margin-right: 2rem;
+    margin: 0 2rem 1.5rem 2rem;
 }
 
 .cta button {
@@ -597,11 +482,20 @@ footer p {
     color: white;
 }
 
+.pokeImage{
+    margin: 2rem;
+    padding: 1rem;
+}
 .responsive {
     max-width: 100%;
     height: auto;
 }
 
+.description, .version, .information {
+    margin: 2rem;
+}
+
+.description{line-height: 1.5rem;}
 /* making game version sit next to each other */
 .versionFlex {
     display: flex;
@@ -612,7 +506,13 @@ footer p {
 .versionFlex p {
     font-weight: bold;
 }
-
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+}
 .information div .bold {
     padding-bottom: 1rem;
     font-weight: bold;
@@ -626,21 +526,22 @@ footer p {
 .type ul {
     display: flex;
     gap: 2rem;
+    margin: 2rem;
 }
 
 .type p{
     font-weight: bold;
-    padding-bottom: 1rem;
+    margin: 2rem;
 }
 
 /* stats */
 /* creating graph */
 /* making the line */
 .vertical span {
-    width: 3rem;
+    width: 1rem;
     height: .5rem;
     border: .1rem solid var(--secondary-color);
-    margin: 0 2rem .5rem 2rem;
+    margin: 0 0rem .2rem 0rem;
 }
 /* using flex to make lines display vertical */
 .vertical {
@@ -657,187 +558,242 @@ footer p {
     justify-items: center;
 }
 
+.stats {
+    width: 80%;
+}
 /* stats title */
 .stats p{
     font-weight: bold;
-    margin-left: 4rem;
-    padding-top: 2rem;
+    margin: 2rem;
 }
 
 /* stats categories */
 #statsTitle {
     padding-top: 1rem;
     border: none;
-    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-bottom: 2rem;
 }
 /* adding fill to lines */
 .fill {
     background-color: var(--secondary-color);
 }
-
+/* styling weaknesses */
 .weak p {
     font-weight: bold;
-    padding-bottom: 1rem;
+    margin: 2rem;
 }
+
 /* using flex so buttons sit next to each other */
 .weak-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin: 0 2rem 0 2rem;
 }
 
 /* evolutions */
 
 .arrow {
-    width: 5rem;
+    width: 3rem;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
 }
 
 .evolutionTitle {
     font-weight: bold;
-    padding-bottom: 1rem;
+    margin: 2rem;
 }
-
+/* styling box containing pokemon evolutions */
 .pokeEvolution {
     background-color: var(--primary-color);
-    margin: 2rem;
     padding: 1rem;
     border-radius: 1rem;
+    width: fit-content;
 }
-
+/* styling pokemon name */
 .pokeEvolution p {
     font-weight: bold;
     padding: .5rem;
 }
-
+/* styling pokemon hexadecimal */
 .pokeEvolution p span {
     padding-left: .5rem;
     color: var(--secondary-color);
 }
 
-.container {
-    margin-left: 8rem;
-    margin-right: 8rem;
-    background-color: var(--background-color);
-
-}
-
-.grid div {
-    padding: 2rem;
-}
-
-.pokem {
-    background-color: var(--primary-color);
-    margin: 1rem 2rem 1rem 2rem;
-    border-radius: 1rem;
+.evolutionGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 /*******************************************
                 Media Queries 
 ********************************************/
-/* for tablet */
-@media only screen and (min-width: 768px) {
-    
+/******************************************
+                MOBILE
+******************************************/
+@media only screen and (max-width: 539px) {
+
     /*******************
-        Grid
+     Navigation
     *******************/
-        .pokemonGrid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin: auto;
-            width: 80%;
-            padding-bottom: 2rem;
-        }
-        #myPokemonGrid {
-            /* creating the grid */
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 6rem 4rem 20rem 6rem 23rem 26rem;
-            margin-top: 2rem;
-        }
-        /* positioning description */
-        .description {
-            grid-row-start: 1;
-            grid-column-start: 2;
-            padding: 0 4rem 2rem 2rem;
-            line-height: 2rem;
-        }
-        .pokeImage {
-            margin: 0 2rem 0 4rem;
-            background-color: var(--tertiary-color);
-            border-radius: 1rem;
-        
-            /* positioning image */
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 4;
-        }
+
+    /* styling the logo */
+    .logo {
+        width: 8rem;
+        padding: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* styling nav icons */
+    .nav-icons {
+        height: 2.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: .5rem;
+    }
+    .navbar {
+        background-color: var(--secondary-color);
+        /* hiding until click */
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+
+    /* styling nav list */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items{
+        margin: 1.5rem;
+    }
+
+    /* icons */
+    .nav-x{
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-x:hover{
+        color: black;
+    }
+
+    .hamburger-menu{
+        color: white;
+        padding: 1rem;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        margin: 1rem;
+    }
+
+    .circle {
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--primary-color);
+    }
+
+    .hamburger-menu:hover{
+        color: black;
+        background-color: var(--tertiary-color);
+        border: 1px solid black;
+    }
+
+    .nav-items a {
+        color: white;
+    }
+    /* adding hover to nav links / icons / logo */
+
+    .nav-items a:hover {
+        color: #926a9e;
+    }
+
+    .nav-icons:hover {
+        background-color: #926a9e;
+        padding: .5rem;
+    }
+
+    .logo:hover{
+        background-color: #926a9e;
+    }
+    /* styling my pokemon page */
+    .pokem {
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+        margin: .5rem;
+    }
     
-        .pokeImage img{
-            /* centering image */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* positioning version */
-        .version {
-            grid-column-start: 2;
-            grid-row-start: 2;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+
+/******************************************
+                TABLET
+******************************************/
+@media only screen and (min-width: 540px) {
+
+    /* hiding icons from hamburger menu */
+    #x {display: none;}
+    #hamburger{display: none;}
     
-            padding: 0 4rem 0 2rem;
-        }
-        /* creating information grid */
-        .information {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            margin: 0 4rem 0 2rem;
-            background-color: var(--primary-color);
-            border-radius: 1rem;
-            width: fit-content;
-            padding: 2rem 2rem 0 2rem;
-            column-gap: 4rem;
-        }
+    /* styling main pokedex */
+   #container {
+        background-color: var(--tertiary-color);
+        margin: 0 2rem 0 2rem;
+    }
+    .container {background-color: var(--background-color);}
+     
+    /* styling main pokemon grid */
+    .pokemonGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* styling navigation */
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* creating information grid */
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 4rem 0 2rem;
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+        padding: 2rem;
+        column-gap: 4rem;
+    }
     
-        /* positioning information */
-        #information {
-            grid-row-start: 3;
-            grid-row-end: 4;
-        }
-        /* positioning type */
-        .type {
-            grid-column-start: 2;
-            grid-row-start: 4;
-            padding: 2rem;
-        }
-    
-        /* positioning stats */
-        .stats {
-            padding: 0 2rem 0 2rem;
-            grid-column-start: 1;
-            grid-row-start: 4;
-            grid-row-end: 6;
-        }
-        /* positioning weaknesses */
-        .weak {
-            grid-column-start: 2;
-            grid-row-start: 5;
-            margin-left: 2rem;
-            padding-top: 2rem;
-        }
-    
-        .evolution {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 6;
-    
-            margin: 0 auto;  
-            padding-bottom: 2rem;  
-        }
-        .evolutionGrid {
-            display: flex;
-            gap: 1rem;
-        }
+    .weak {
+        margin: unset;
+    }
+
+    .next {
+        display: flex;
+        padding-top: 2rem;
+    }
+
+
         .grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -858,21 +814,13 @@ footer p {
             gap: 1rem;
         }
 
-        /* styling the container */
-        #container {
-            background-color: var(--background-color);
-            margin: 0 8rem 0 8rem;
-        }
-
         /* styling the logo */
-
         .logo {
             width: 8rem;
             padding: 1rem;
         }
 
         /* styling nav items */
-
         .nav-icons {
             height: 2.5rem;
             padding-bottom: .5rem;
@@ -907,7 +855,6 @@ footer p {
         }
 
         /* adding hover to nav links / icons / logo */
-
         .nav-items a:hover {
             color: #926a9e;
         }
@@ -921,8 +868,42 @@ footer p {
             background-color: #926a9e;
     
         }
+
+        /* styling my pokemon page */
+        .pokem {
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+        margin: .5rem;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 1rem 2rem 1rem;
+        }
 }
 
 
-/* for desktop */
 
+
+
+/* i'm going to need interim versions for certain things */
+/* for stats table on pokemon information page */
+/* #statsTitle {
+    writing-mode: horizontal-tb;
+    text-align: center;
+} */
+
+/******************************************
+                DESKTOP
+******************************************/
+
+@media only screen and (min-width: 1200px) {
+    /* making filters sit next to each other */
+    #suprise{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
