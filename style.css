@@ -94,20 +94,93 @@ h2 {
 *******************/
 
 /* styling the logo */
-
 .logo {
     width: 8rem;
     padding: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* styling nav items */
-
+/* styling nav icons */
 .nav-icons {
     height: 2.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     padding-bottom: .5rem;
-    text-align: center;
 }
 
+.navbar {
+    background-color: var(--secondary-color);
+    /* hiding until click */
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* styling nav list */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-items{
+    margin: 1.5rem;
+}
+
+/* icons */
+.nav-x{
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-x:hover{
+    color: black;
+}
+
+.hamburger-menu{
+    color: white;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.circle {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+}
+
+.hamburger-menu:hover{
+    color: black;
+    background-color: var(--tertiary-color);
+    border: 1px solid black;
+}
+
+.nav-items a {
+    color: white;
+}
+/* adding hover to nav links / icons / logo */
+
+.nav-items a:hover {
+    color: #926a9e;
+}
+
+.nav-icons:hover {
+    background-color: #926a9e;
+    padding: .5rem;
+}
+
+.logo:hover{
+    background-color: #926a9e;
+}
 /*******************
     Content
 *******************/
@@ -127,9 +200,11 @@ h2 {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   
 }
 
+#banner {
+    background-color: var(--primary-color);
+}
 /*******************
     Search Bar
 *******************/

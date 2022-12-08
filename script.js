@@ -18,3 +18,18 @@ window.onclick = function(event) {
     }
   }
 }
+
+// hamburger menu
+
+const $hamburger = document.getElementById('hamburger')
+const $nav = document.getElementById('nav')
+
+$hamburger.addEventListener('click', function(){
+  $nav.classList.add('show')
+})
+
+const x = document.getElementById('x')
+
+x.addEventListener('click', function(){
+  $nav.classList.remove('show')
+})
