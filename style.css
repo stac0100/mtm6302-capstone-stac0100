@@ -222,7 +222,7 @@ h2 {
     Pokemon
 *******************/
 /* pokemon content box */
-#pokemon {
+.mainPokemon {
     background-color: var(--primary-color);
     border: .1rem solid var(--secondary-color);
     border-radius: 2rem;
@@ -230,7 +230,7 @@ h2 {
     margin: 0 auto;
 }
 /* hexadecimal number under pokemon */
-#pokemon span {
+.mainPokemon span {
     color: var(--secondary-color);
     padding: 2rem;
 }
