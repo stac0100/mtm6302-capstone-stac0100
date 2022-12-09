@@ -514,15 +514,7 @@ footer p {
     gap: 1rem;
     margin: 0 2rem 0 2rem;
 }
-/* evolutions */
-.arrow {
-    width: 3rem;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: rotate(90deg);
-}
+
 .evolutionTitle {
     font-weight: bold;
     margin: 2rem;
@@ -556,7 +548,7 @@ footer p {
 /******************************************
                 MOBILE
 ******************************************/
-@media only screen and (max-width: 539px) {
+@media only screen and (max-width: 544px) {
 
     /*******************
      Navigation
@@ -659,12 +651,22 @@ footer p {
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 1rem 0 1rem;
     }
+
+    /* evolutions */
+    .arrow {
+        width: 3rem;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(90deg);
+    }
 }
 
 /******************************************
                 TABLET
 ******************************************/
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 545px) {
 
     /* hiding icons from hamburger menu */
     #x {display: none;}
@@ -705,6 +707,18 @@ footer p {
     .next {
         display: flex;
         padding-top: 2rem;
+    }
+
+    .search {width: 60%;}
+
+    /* evolutions */
+    .arrow {
+        width: 3rem;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(90deg);
     }
     
    /* styling the logo */
@@ -757,19 +771,19 @@ footer p {
             padding: .5rem;
         }
 
-        .logo:hover{
+    .logo:hover{
             background-color: #926a9e;
     
         }
 
-        /* styling my pokemon page */
+    /* styling my pokemon page */
         .pokem {
         background-color: var(--primary-color);
         border-radius: 1rem;
         margin: .5rem;
         }
     
-        .grid {
+    .grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             margin: 0 1rem 0 1rem;
@@ -800,7 +814,12 @@ footer p {
 ******************************************/
 
 @media only screen and (min-width: 1200px) {
-    /* making filters sit next to each other */
+
+    /* increasing green background container */
+    #container {padding: 0 6rem;}
+    body {height: 100vh;}
+
+    /* making filters sit next to each other on main */
     #suprise{
         display: flex;
         justify-content: space-between;
@@ -808,18 +827,48 @@ footer p {
         margin-bottom: 2rem;
     }
 
+    /* pokemon information page - making poke evolutions sit in a row */
     .evolutionGrid{
         display: flex;
         flex-direction: row;
+        padding: 0 2rem 2rem 2rem;
     }
 
-    #myPokemonGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: max-content;
+    /* switching evolution arrow direction */
+    .arrow {
+        transform: none;
     }
-    .pokeImage{grid-column-start: 1; grid-row-start: 1; grid-row-end: 3;}
-    .version {grid-column-start: 2; grid-row-start: 2;}
-    .stats{grid-row-start: 3;}
-    .information{grid-row-start: 3; grid-column-start: 2;}
+
+    #statsTitle {
+        writing-mode: horizontal-tb;
+        text-align: center;
+    }
+
+    /* main pokemon grid */
+    #pokemonGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* myPokemon grid */
+    .grid {
+        grid-template-columns: repeat(6, 1fr)
+    }
+
+    .myPokemonGrid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .pokeImage{grid-row-start: 1; grid-row-end: span 3; grid-column-start: 1;}
+    .description {grid-row-start:1; grid-column-start: 2;}
+    .version {grid-row-start: 2;}
+    .information {grid-column-start: 2;}
+
+    .facts {display: grid; grid-template-columns: 1fr 1fr;}
+    .stats {width: fit-content; grid-column-start: 1; grid-row-start: 1;}
+    .vertical {margin: 2rem;}
+    .type, .weak {margin-left: 6.5rem;}
+}
+
+@media only screen and (min-width: 1500px) {
+    #pokemonGrid {grid-template-columns: repeat(5, 1fr);}
 }

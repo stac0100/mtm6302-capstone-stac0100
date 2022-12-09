@@ -38,11 +38,6 @@ x.addEventListener('click', function(){
 const $pokemonGrid = document.getElementById('pokemonGrid')
 const pokemon = []
 
-// adding pokemon to myPokemon 
-
-const $myPokemonGrid = document.getElementById('myPokemonGrid')
-const myPokemon = []
-
 // might need to change to a for of loop?
 // needs ${i} to show different images 
 for (let i = 0; i < 19; i++) {
@@ -59,12 +54,6 @@ for (let i = 0; i < 19; i++) {
         </div>
       </div>
     </div>`)
-    myPokemon.push(`<div class="pokem">
-  <img class="responsive" src="images/001.png" alt="pokemon">
-  </div>`)
 }
 // adding pokemon to HTML
 $pokemonGrid.innerHTML = pokemon.join('')
-
-// adding myPokemon to HTML
-$myPokemonGrid.innerHTML = myPokemon.join('')
