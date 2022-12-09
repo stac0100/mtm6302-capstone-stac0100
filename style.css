@@ -64,28 +64,18 @@ table {
     --tertiary-color: #DCF2DD;
     --background-color: #FAFAFA;
 }
-
-body{
-    background-color: var(--tertiary-color);
-}
-
 /* setting font hierarchy */
-p {
-    font-size: 18px;
-}
-
+p {font-size: 18px;}
 h1 {
     font-size: 2rem;
     font-weight: bold;
-    padding: 2rem 2rem 2rem 4rem;
-    
+    padding: 2rem 2rem 2rem 4rem;   
 }
 h2 {
     font-size: 1.75rem;
     font-weight: bold;
     padding-bottom: 1rem;
 }
-
 /*******************
     Content
 *******************/
@@ -99,19 +89,15 @@ h2 {
    margin-left: auto;
    margin-right: auto;
 }
-
 #banner {
     background-color: var(--primary-color);
     padding-bottom: 3rem;
 }
-
 /*******************
     Search Bar
 *******************/
-
 /* styling the search function */
 #search {margin: auto;}
-
 .form-container {
     background-color: var(--secondary-color);
     padding-top: 1rem;
@@ -122,12 +108,10 @@ h2 {
     border-radius: 3rem;
     border: .2rem solid var(--tertiary-color);
 }
-
 .search-icon {
     width: 1.5rem;
     padding: 1rem;
 }
-
 /* making the search button overlap the input form */
 .search-submit {
     border: .2rem solid var(--tertiary-color);
@@ -136,7 +120,6 @@ h2 {
     position: relative;
     right: 4rem;
 }
-
 /* making the search button and input sit next to each other & centering */
 .search-bar {
     display: flex;
@@ -145,18 +128,15 @@ h2 {
     position: relative;
     bottom: 3rem;
 }
-
 .search-bar input[type=text] {
     font-size: 1rem;
 }
 /************************
     Advanced Search
 *************************/
-
 .advanced-search {
     background-color: var(--background-color);
 }
-
 .advanced-search p {
     margin: 0 auto;
     padding: .5rem 2rem 1rem 2rem;
@@ -167,15 +147,9 @@ h2 {
     border-bottom-left-radius: .4rem;
     border-bottom-right-radius: .4rem;
 }
-
-/*******************
-    Filters
-*******************/
-
 /*******************
     Drop-Down
 *******************/
-
 .dropButton {
     background-color: var(--background-color);
     color: rgb(59, 59, 59);
@@ -186,11 +160,9 @@ h2 {
     border: .1rem solid rgb(128, 126, 126);
     border-radius: 2rem;
   }
-
   .dropButton img{
     width: 1.5rem;
   }
-  
   /* Dropdown button on hover & focus */
   .dropButton:hover, .dropButton:focus {
     background-color: var(--primary-color);
@@ -202,7 +174,6 @@ h2 {
     align-items: center;
     margin: 2rem;
   }
-  
   /* Hidden by Default */
   .dropdown-filter {
     display: none;
@@ -213,19 +184,15 @@ h2 {
     z-index: 1;
     padding: 1rem;
   }
-
   .dropdown-filter li {
     padding: 1rem;
   }
-
   .dropdown-filter li:hover {
     background-color: var(--secondary-color);
     color: white;
   }
-
   /* Show the dropdown menu */
   .show {display:block;}
-
 /***********************
     Suprise Button
 ************************/
@@ -233,7 +200,6 @@ h2 {
     width: 2rem;
     padding-right: 2rem;
 }
-
 .button {
     background-color: #A3A1D0;
     border: none;
@@ -243,22 +209,18 @@ h2 {
     padding: .5rem;
     margin: 2rem;
 }
-
 .button p {
     padding-right: 1rem;
     padding-left: 2rem;
     color: white;
     font-weight: bold;
 }
-
 .button:hover {
     background-color: violet;
 }
-
 /*******************
     Pokemon
 *******************/
-
 /* pokemon content box */
 #pokemon {
     background-color: var(--primary-color);
@@ -267,24 +229,20 @@ h2 {
     width: fit-content;
     margin: 0 auto;
 }
-
 /* hexadecimal number under pokemon */
 #pokemon span {
     color: var(--secondary-color);
     padding: 2rem;
 }
-
 /* pokemon name and skills buttons */
 .pokemonContent {
     margin: 0 auto;
     width: 50%;
     padding: 2rem;
 }
-
 /**************************
     Pokemon Skills
 ***************************/
-
 .grass {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -292,7 +250,6 @@ h2 {
     margin-bottom: .5rem;
     background-color: #9BCB50;
 }
-
 .poison {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -301,7 +258,6 @@ h2 {
     background-color: #B97FC9;
     color: white;
 }
-
 .fire {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -310,7 +266,6 @@ h2 {
     background-color: #FC7C23;
     color: white;
 }
-
 .flying {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -318,7 +273,6 @@ h2 {
     margin-bottom: .5rem;
     background: linear-gradient(#3DC7EF 50%, #BCB8B8 50%);
 }
-
 .water {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -327,7 +281,6 @@ h2 {
     background-color: #4592C4;
     color: white;
 }
-
 .bug {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -336,7 +289,6 @@ h2 {
     background-color: #729F40;
     color: white;
 }
-
 .normal {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -344,7 +296,6 @@ h2 {
     margin-bottom: .5rem;
     background-color: #A2ABAF;
 }
-
 .psychic {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -353,7 +304,6 @@ h2 {
     background-color: #F364B9;
     color: white;
 }
-
 .ice {
     padding: .4rem 1.5rem .4rem 1.5rem;
     border-radius: 1rem;
@@ -362,11 +312,9 @@ h2 {
     background-color: #51C4E6;
     color: white;
 }
-
 /************************
    Load More Button
 *************************/
-
 .loadMore {
     padding: .8rem 3rem .8rem 3rem;
     margin-left: auto;
@@ -380,24 +328,19 @@ h2 {
     font-size: 1.2rem;
     color: var(--secondary-color);
     }
-
 #more {
     padding-bottom: 2rem;
 }
-
 .loadMore:hover {
     background-color: var(--secondary-color);
     color: white;
 }
-
-
 /*******************
     Footer
 *******************/
 footer{
     background-color: var(--secondary-color);
 }
-
 footer p {
     color: white;
     padding: 0 4rem 2rem 4rem;
@@ -414,25 +357,20 @@ footer p {
 .footer li a{
     color: white;
 }
-
 /****************************************
         pokemon information 
 ****************************************/
-
 /*******************
-    Next function
+        Next
 *******************/
-
 .transform {
     width: 1rem;
     transform: rotate(90deg);
 }
-
 .transform-left {
     width: 1rem;
     transform: rotate(-90deg);
 }
-
 .next button {
     margin: 0 2rem 2rem 2rem;
     padding: .5rem;
@@ -442,13 +380,11 @@ footer p {
     background-color: var(--secondary-color);
     border-radius: 1rem;
 }
-
 .next button span {
     padding: .5rem;
     color: var(--primary-color);
     font-size: 1.25rem;
 }
-
 #hex {
     color: white;
     font-weight: bold;
@@ -460,13 +396,11 @@ footer p {
 /*******************
     Call to Action
 *******************/
-
 .cta p {
     line-height: 2rem;
     text-align: center;
     margin: 0 2rem 1.5rem 2rem;
 }
-
 .cta button {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
@@ -476,12 +410,10 @@ footer p {
     background-color: var(--tertiary-color);
     border: none;
 }
-
 .cta button:hover {
     background-color: var(--secondary-color);
     color: white;
 }
-
 .pokeImage{
     margin: 2rem;
     padding: 1rem;
@@ -490,11 +422,9 @@ footer p {
     max-width: 100%;
     height: auto;
 }
-
 .description, .version, .information {
     margin: 2rem;
 }
-
 .description{line-height: 1.5rem;}
 /* making game version sit next to each other */
 .versionFlex {
@@ -502,7 +432,6 @@ footer p {
     column-gap: 2rem;
     align-items: center;
 }
-
 .versionFlex p {
     font-weight: bold;
 }
@@ -517,25 +446,21 @@ footer p {
     padding-bottom: 1rem;
     font-weight: bold;
 }
-
 .information div p {
     padding-bottom: 2rem;
 }
-
 /* making type buttons sit next to each other */
 .type ul {
     display: flex;
     gap: 2rem;
     margin: 2rem;
 }
-
 .type p{
     font-weight: bold;
     margin: 2rem;
 }
 
-/* stats */
-/* creating graph */
+/* stats graph */
 /* making the line */
 .vertical span {
     width: 1rem;
@@ -557,7 +482,6 @@ footer p {
     margin-top: 2rem;
     justify-items: center;
 }
-
 .stats {
     width: 80%;
 }
@@ -566,7 +490,6 @@ footer p {
     font-weight: bold;
     margin: 2rem;
 }
-
 /* stats categories */
 #statsTitle {
     padding-top: 1rem;
@@ -584,7 +507,6 @@ footer p {
     font-weight: bold;
     margin: 2rem;
 }
-
 /* using flex so buttons sit next to each other */
 .weak-buttons {
     display: flex;
@@ -592,9 +514,7 @@ footer p {
     gap: 1rem;
     margin: 0 2rem 0 2rem;
 }
-
 /* evolutions */
-
 .arrow {
     width: 3rem;
     position: relative;
@@ -603,7 +523,6 @@ footer p {
     margin-right: auto;
     transform: rotate(90deg);
 }
-
 .evolutionTitle {
     font-weight: bold;
     margin: 2rem;
@@ -625,14 +544,12 @@ footer p {
     padding-left: .5rem;
     color: var(--secondary-color);
 }
-
 .evolutionGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
 }
-
 /*******************************************
                 Media Queries 
 ********************************************/
@@ -740,7 +657,7 @@ footer p {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 0 1rem 2rem 1rem;
+        margin: 0 1rem 0 1rem;
     }
 }
 
@@ -756,15 +673,14 @@ footer p {
     /* styling main pokedex */
    #container {
         background-color: var(--tertiary-color);
-        margin: 0 2rem 0 2rem;
+        padding: 0 3rem;
     }
-    .container {background-color: var(--background-color);}
+    .container {background-color: var(--background-color); margin-bottom: unset;}
      
     /* styling main pokemon grid */
     .pokemonGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
 
     /* styling navigation */
@@ -783,38 +699,15 @@ footer p {
         padding: 2rem;
         column-gap: 4rem;
     }
-    
     .weak {
         margin: unset;
     }
-
     .next {
         display: flex;
         padding-top: 2rem;
     }
-
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-        }    
-
-        /* pokemon evolutions */
-        .evolution {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 6;
-        
-            margin: 0 auto;  
-            padding-bottom: 2rem;  
-        }
-        
-        .evolutionGrid {
-            display: flex;
-            gap: 1rem;
-        }
-
-        /* styling the logo */
+    
+   /* styling the logo */
         .logo {
             width: 8rem;
             padding: 1rem;
@@ -878,13 +771,21 @@ footer p {
     
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin: 0 1rem 2rem 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 1rem 0 1rem;
+            padding-bottom: 1rem;
         }
 }
 
 
-
+@media only screen and (min-width: 750px) {
+    .pokemonGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .pokemonContent {text-align: center;}
+    .next button{width: 40%;}
+    .cta{margin: 0 2rem;}
+} 
 
 
 /* i'm going to need interim versions for certain things */
@@ -906,4 +807,19 @@ footer p {
         align-items: center;
         margin-bottom: 2rem;
     }
+
+    .evolutionGrid{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #myPokemonGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+    }
+    .pokeImage{grid-column-start: 1; grid-row-start: 1; grid-row-end: 3;}
+    .version {grid-column-start: 2; grid-row-start: 2;}
+    .stats{grid-row-start: 3;}
+    .information{grid-row-start: 3; grid-column-start: 2;}
 }
