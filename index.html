@@ -25,7 +25,7 @@
             </ul>
         </nav>   
     </div>
-    <div id="container">
+    <main id="container">
         <div class="container">
             <div id="banner">
                 <img class="banner" src="images/banner.png" alt="pokemon surround text">
@@ -37,12 +37,8 @@
                     <button class="search-submit" type="submit"><img class="search-icon" src="icons/loupe-white.png" alt="magnifying glass icon"></button>
                 </form>
             </div>
-            <div class="advanced-search">
-                <!-- advanced search -->
-                <p>Show Advanced Search <!-- add icon --></p>
-                <!-- this should include a drop down menu -->
-            </div>
-            <div>
+            <div class="advanced-search"><p>Show Advanced Search <!-- add icon --></p></div>
+            <div> <!-- contains pokemon filters-->
                 <div id="suprise">
                     <!-- suprise button, provides a random pokemon -->
                     <button class="button"><p>Suprise Me </p> <img class="button-icon" src="icons/random copy.png" alt="box of suprises icon"></button>
@@ -61,15 +57,12 @@
             </div>
             <div id="pokemonGrid" class="pokemonGrid">
                 <!-- adding all the pokemon -->
-                
             </div>
             <div id="more">
-                <!-- adding load more button -->
                 <button class="loadMore">Load More...</button>
             </div>
         </div>
-    </div>
-
+    </main>
     <footer>
         <nav>
             <ul class="footer">
@@ -80,7 +73,6 @@
         </nav>
         <p>©Pokémon</p>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>

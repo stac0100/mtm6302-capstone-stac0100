@@ -1,3 +1,40 @@
+const $pokemonGrid = document.getElementById('pokemonGrid')
+const url = "https://pokeapi.co/api/v2/pokemon/1";
+
+let pokemons = []
+
+function createPokemon (pokemons) {
+  const html = []
+  for (const pokemon of pokemons) {
+    html.push(/*html*/ `
+      <div>
+        <div class="mainPokemon">
+          <div><img src="${pokemon.sprites.other[official-artwork].front_default}" alt="pokemon"></div>
+          <span>${pokemon.id}</span>
+        </div>
+        <div class="pokemonContent">
+          <h2 id="pokemonName">${pokemon.name}</h2>
+          <div>
+            <button class="grass">${abilities[0].ability.name}</button>
+            <button class="poison">${abilities[1].ability.name}</button>
+          </div>
+        </div>
+      </div>
+    `)
+  }
+  return html
+}
+async function getPokemon () {
+  const response = await fetch(url)
+  pokemons = await response.json()
+
+  const html = createPokemon(pokemons)
+  console.log(html)
+}
+
+getPokemon()
+
+
 // adding dropdown menu for filters
 // toggle between hiding and showing the dropdown content
 
@@ -49,6 +86,4 @@ $x.addEventListener('click', function(){
 //       </div>
 //     </div>`)
 
-// this link seemed helpful 
-// https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
 
