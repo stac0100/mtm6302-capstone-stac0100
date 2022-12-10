@@ -25,35 +25,30 @@ const $hamburger = document.getElementById('hamburger')
 const $nav = document.getElementById('nav')
 
 $hamburger.addEventListener('click', function(){
-  $nav.classList.add('show')
+  $nav.classList.add('show');
 })
 
-const x = document.getElementById('x')
+const $x = document.getElementById('x');
 
-x.addEventListener('click', function(){
-  $nav.classList.remove('show')
-})
+$x.addEventListener('click', function(){
+  $nav.classList.remove('show');
+});
 
-// adding pokemon to homepage 
-const $pokemonGrid = document.getElementById('pokemonGrid')
-const pokemon = []
+// this is the pokemon structure 
+//pokemon.push(`<div>
+//     <div class="mainPokemon">
+//         <div><img src="images/001.png" alt="pokemon"></div>
+//         <span>#001</span>
+//     </div>
+//     <div class="pokemonContent">
+//         <h2 id="pokemonName">Bulbasaur</h2>
+//         <div>
+//             <button class="grass">Grass</button>
+//             <button class="poison">Poison</button>
+//         </div>
+//       </div>
+//     </div>`)
 
-// might need to change to a for of loop?
-// needs ${i} to show different images 
-for (let i = 0; i < 19; i++) {
-    pokemon.push(`<div>
-    <div class="mainPokemon">
-        <div><img src="images/001.png" alt="pokemon"></div>
-        <span>#001</span>
-    </div>
-    <div class="pokemonContent">
-        <h2>Bulbasaur</h2>
-        <div>
-            <button class="grass">Grass</button>
-            <button class="poison">Poison</button>
-        </div>
-      </div>
-    </div>`)
-}
-// adding pokemon to HTML
-$pokemonGrid.innerHTML = pokemon.join('')
+// this link seemed helpful 
+// https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
+

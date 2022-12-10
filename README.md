@@ -22,3 +22,17 @@ takes up and to make it easier for the user to view the content without getting 
 the ease of reading through paragraphs of content. 
 
 > I included playful icons throughought to remind the user to have fun and enjoy the site.
+
+
+# Capstone Project - Part 4 
+
+Beginning this project, I had to initially fix the errors that I had made on Capstone - Part 3. 
+Due to this, I began with making the website responsive as I had failed to do that last time around. 
+
+> this process took some time as I had to find the various breakpoints 
+> also had to readjust certain content into a media query for mobile because my styles were all 
+    mixed together 
+
+Next, 
+
+> researching the pokeAPI
