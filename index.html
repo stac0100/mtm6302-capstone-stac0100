@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project: Pokedex</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/24cd8a4363.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- beginning header -->
     <div id="header">
         <div id="hamburger" class="circle">
             <i class="fa-solid fa-bars fa-2x hamburger-menu"></i>
@@ -19,12 +19,13 @@
             <!-- it needs to be in a list so it's easy to style with flex -->
             <a href="index.html"><img class="logo" src="icons/logo-white.png" alt="Pokemon 8 Logo"></a>
             <ul class="nav-links">
-                <li class="nav-items"><a href="index.html"><img class="nav-icons" src="icons/gaming-white.png" alt="Pokemon ball with stars and cirles surrounding it"><br>Pokédex</a></li>
-                <li class="nav-items"><a href="myPokemon.html"><img class="nav-icons" src="icons/backpack-white.png" alt="white backpack"><br>My Pokémon</a></li>
+                <li class="nav-items"><a href="#pokemonGrid"><img class="nav-icons" src="icons/gaming-white.png" alt="Pokemon ball with stars and cirles surrounding it"><br>Pokédex</a></li>
+                <li class="nav-items"><a href="#caughtList"><img class="nav-icons" src="icons/backpack-white.png" alt="white backpack"><br>My Pokémon</a></li>
                 <li class="nav-items"><a href=""><img class="nav-icons" src="icons/login-white.png" alt="login icon"><br>Log-in</a></li>
             </ul>
         </nav>   
-    </div>
+    </div> <!-- end header -->
+    <!-- beginning main -->
     <main id="container">
         <div class="container">
             <div id="banner">
@@ -37,32 +38,34 @@
                     <button class="search-submit" type="submit"><img class="search-icon" src="icons/loupe-white.png" alt="magnifying glass icon"></button>
                 </form>
             </div>
-            <div class="advanced-search"><p>Show Advanced Search <!-- add icon --></p></div>
+            <div class="advanced-search"><p>Show Advanced Search</p></div>
             <div> <!-- contains pokemon filters-->
                 <div id="suprise">
-                    <!-- suprise button, provides a random pokemon -->
                     <button class="button"><p>Suprise Me </p> <img class="button-icon" src="icons/random copy.png" alt="box of suprises icon"></button>
-                    <!-- sort function dropdown -->
-                    <div class="sort">
-                        <p>Sort By:</p>
-                        <button onclick="myFunction()" class="dropButton">Lowest Number (First) <img src="icons/arrow copy.png" alt="dropdown icon"></button>
-                        <ul id="dropdown" class="dropdown-filter">
-                            <li>Lowest Number (First)</li>
-                            <li>Highest Number (First)</li>
-                            <li>A-Z</li>
-                            <li>Z-A</li>
-                        </ul>
-                    </div>
+                    <button class="dropButton">Lowest Number (First) <img src="icons/arrow copy.png" alt="dropdown icon"></button>
                 </div>
             </div>
+            <!-- ^^^ this is all irrelevant -->
+
+            <!-- adding content dynamically -->
             <div id="pokemonGrid" class="pokemonGrid">
-                <!-- adding all the pokemon -->
+                <!-- pokedex -->
+                <!-- adding pokemon in js -->
             </div>
             <div id="more">
                 <button class="loadMore">Load More...</button>
             </div>
+            <div id="pokemonInfo">
+                <!-- appears on click -->
+                <!-- adding infor in js -->
+            </div>
+            <div id="caughtList">
+
+            </div>
         </div>
-    </main>
+    </main> <!-- end main -->
+
+    <!-- beginning footer-->
     <footer>
         <nav>
             <ul class="footer">
@@ -72,7 +75,11 @@
             </ul>
         </nav>
         <p>©Pokémon</p>
-    </footer>
+    </footer> <!-- end footer-->
+
+    <!-- linking script files -->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/24cd8a4363.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
