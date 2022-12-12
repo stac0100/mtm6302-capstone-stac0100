@@ -222,23 +222,24 @@ h2 {
     Pokemon
 *******************/
 /* pokemon content box */
-.mainPokemon {
+.poke_container {
     background-color: var(--primary-color);
     border: .1rem solid var(--secondary-color);
     border-radius: 2rem;
-    width: fit-content;
-    margin: 0 auto;
+    margin: 2rem;
 }
-/* hexadecimal number under pokemon */
-.mainPokemon span {
-    color: var(--secondary-color);
-    padding: 2rem;
-}
-/* pokemon name and skills buttons */
-.pokemonContent {
-    margin: 0 auto;
+
+.poke {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    padding: 2rem;
+    padding: .5rem;
+}
+
+.info {
+    text-align: center;
+    padding-bottom: .5rem;
 }
 /**************************
     Pokemon Skills
