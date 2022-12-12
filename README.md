@@ -32,7 +32,8 @@ Due to this, I began with making the website responsive as I had failed to do th
 > this process took some time as I had to find the various breakpoints 
 > also had to readjust certain content into a media query for mobile because my styles were all 
     mixed together 
+> additionally I had to move everything into one html doc
 
-Next, 
+Utilizing the fetch API for this assignment proved rather difficult for me. I struggled to comprehend how to properly utilize the information I was receiving from the API. 
 
-> researching the pokeAPI
+I tried my best to complete this assignment but found myself very overwhelmed. I wish I had taken more time to truly understand what I was supposed to be creating before submitting a mockup. 
